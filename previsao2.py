@@ -1,4 +1,5 @@
 import requests
+import win32com.client as win32
 
 Api_Key = "8838be9516f93ece70b22d3865b9acc3"
 cidade = "Longueuil"
@@ -23,7 +24,6 @@ print(f"{sensacao}ºC")
 if sensacao > 4:
 
     #enviando e-mail
-    import win32com.client as win32
     outlook = win32.Dispatch('outlook.application')
     mail = outlook.CreateItem(0)
     mail.To = 'lg_fonseca@hotmail.com'
