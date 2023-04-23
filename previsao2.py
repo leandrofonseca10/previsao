@@ -21,7 +21,7 @@ print(f"{temperatura}ºC")
 print(f"{sensacao}ºC")
 
 
-if sensacao > 4:
+if sensacao < 4:
 
     #enviando e-mail
     outlook = win32.Dispatch('outlook.application')
